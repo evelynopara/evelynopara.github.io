@@ -1,4 +1,286 @@
-html {
-  height: 100%;
+html, body {
+  background-color: #fff5f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #ffebfa;
+  color: black;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-width: 2px;
+  border-top: 2px solid #ff68da;
+  border-bottom: 2px solid #ff68da;
+  padding: 15px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+}
+
+.header-container img {
+  margin: 10px;
+  width: 250px;
+  border-style: solid;
+}
+
+.margin {
+  padding: 10px;
+}
+
+.header-container button {
+  background-color: #ff8fab;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.header-container button:hover {
+  background-color: #e75480;
+}
+
+.header-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-button a:visited {
+  color: white;
+}
+
+.header-button a:active {
+  color: white;
+}
+
+.header-button a:hover {
+  color: white;
+}
+
+#about-fgm, #legal-framework, #advocacy-efforts, #call-to-action {
+  background-color: #ffebfa;
+  border: 2px solid #ff68da;
+}
+
+#about-fgm .content, #legal-framework .content, #advocacy-efforts .content, #call-to-action .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+}
+
+#about-fgm h3, #legal-framework h3, #advocacy-efforts h3, #call-to-action h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#about-fgm p, #legal-framework p, #advocacy-efforts p, #call-to-action p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.content img {
+  margin: 10px;
+  width: 250px;
+  border-color: #FFB6C1;
+}
+
+nav {
+  background-color: rgba(255, 182, 193, 0.5);
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.footer-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
   width: 100%;
+  background-color: #ffebfa;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-content a {
+  color: black;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.petition {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.petition h2 {
+  color: #ff68da;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sign-petition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#sign-petition label {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#sign-petition input,
+#sign-petition textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+#sign-now-button {
+  background-color: #ff8fab;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#sign-now-button:hover {
+  background-color: #e75480;
+}
+
+body.dark-mode {
+  background-color: #c75b6e;
+  color: black ;
+}
+
+body.reduced-motion {
+  scroll-behavior: auto;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.5s;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#modal-img {
+  width: 150px;
+  height: auto;
+  animation: zoomIn 2s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scroll animation */
+.section {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion styles */
+.reduced-motion .section {
+  transition: none;
 }

@@ -1,18 +1,132 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="reset.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ending FGM</title>
+  <link rel="icon" href="https://globalgoalscms.co.uk/wp-content/uploads/2021/11/faec85c4-bf9d-4461-906e-5f444c27b869_Untitleddesign281229.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
+  <div class="header-container">
+    <div id="header-left">
+      <img id="header-img" src="fgm.jpg" width="250px" />
+    </div>
+    <div id="header-right">
+      <h2>Empowering Voices, Protecting Futures</h2>
+      <p>Created by Evelyn Opara</p>
+      <div class="flex-container">
+        <nav id="navigation">
+          <button class="header-button" type="button"><a href="#about-fgm">About FGM</a></button>
+          <button class="header-button" type="button"><a href="#legal-framework">Legal Framework</a></button>
+          <button class="header-button" type="button"><a href="#advocacy-efforts">Advocacy Efforts</a></button>
+          <button class="header-button" type="button"><a href="#call-to-action">Call to Action</a></button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+  <button id="reduce-motion">Reduce Motion</button>
+
+  <div class="content">
+    <section id="about-fgm" class="section">
+      <div class="content">
+        <h3>About FGM</h3>
+        <p>Female Genital Mutilation (FGM) consists of procedures that involve the partial or total removal of the external female genitalia (labia, clitoris, labia minora, labia majora) or cutting and sewing the female genital organs for non-medical reasons. FGM is done to young girls to present them as "clean and pure" to their future husbands. It adds no medical benefit but is done to rather prevent premarital sex. The effects of female genital mutilation include severe bleeding, problems urinating, cysts, infections, and complications during childbirth like increased risk of newborn deaths.</p>
+        <p>Watch <a href="https://youtu.be/WJwP6C5q6Qg?si=x51TKoHMskJzQF8N">this video</a> to learn more.</p>
+        <img id="content-img" src="fgmtypes.jpg" width="250px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WJwP6C5q6Qg?si=gmeHtUjGL9X_Q2lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>FGM has severe and long-lasting consequences:</p>
+        <ul>
+          <li>Severe Bleeding</li>
+          <li>Problems Urinating</li>
+          <li>Cysts</li>
+          <li>Infections</li>
+          <li>Complications during Childbirth: Increased risk of newborn deaths and other obstetric complications</li>
+        </ul>
+        <p>FGM is most prevalent in the Middle East and Africa, but it is also practiced in countries such as India, Indonesia, Jordan, and Malaysia. Despite its widespread practice, there is a growing global movement to end this harmful tradition.</p>
+      </div>
+    </section>
+
+    <section id="legal-framework" class="section">
+      <div class="content">
+        <h3>Legal Framework and Government Action</h3>
+        <ul>
+          <li>28 African countries have enacted laws or specific legal provisions against female genital cutting/mutilation.</li>
+          <li>African governments have committed to the global goal of ending FGM by 2030, launching a continental drive to accelerate the abandonment of FGM at the community level.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="advocacy-efforts" class="section">
+      <div class="content">
+        <h3>Advocacy and Grassroots Efforts</h3>
+        <p>African women’s rights defenders are actively fighting to protect females at risk of FGM. Many are working under the Solidarity for African Women’s Rights Coalition (SOAWR), advocating for systemic changes and community education.</p>
+        <h3>International Efforts</h3>
+        <ul>
+          <li>In 2020, Burkina Faso submitted a resolution at the UN Human Rights Council on behalf of the group of African States, calling on governments globally to take comprehensive, multisectoral, and rights-based measures to prevent and eliminate FGM.</li>
+          <li>Since 2008, UNFPA and UNICEF have led the largest global program to accelerate the elimination of FGM, focusing on 17 countries in Africa and the Middle East while supporting regional and global initiatives.</li>
+          <li>On December 20, 2012, the United Nations General Assembly passed a resolution calling on the nations of the world to eliminate FGM, emphasizing the need for global cooperation and commitment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="call-to-action" class="section">
+      <div class="content">
+        <h3>Call to Action</h3>
+        <p>Ending FGM requires a collaborative effort at all levels of society. We call on:</p>
+        <ul>
+          <li>Governments: To enforce and strengthen legal frameworks against FGM.</li>
+          <li>Communities: To abandon harmful traditions and protect the rights of girls and women.</li>
+          <li>Individuals: To raise awareness and support initiatives aimed at ending FGM.</li>
+        </ul>
+        <p>Together, we can ensure a future where no girl or woman suffers from the physical and psychological trauma of FGM. Join us in advocating for the complete eradication of this practice and supporting survivors on their path to healing and empowerment.</p>
+        <section class="petition" id="petition">
+          <h2>Sign Our Petition 📢</h2>
+          <div class="petition-container">
+            <div class="petition-para">
+              <p>We are calling on global leaders to take immediate action against Female Genital Mutilation (FGM). Your voice matters, and your signature can make a difference in the fight for women's and girls' rights. Join us in advocating for a world where FGM is eradicated and every girl has the right to a safe and healthy future. Sign the petition today to show your support and demand change.</p>
+            </div>
+            <div class="signatures" id="signatures">
+              <!-- Existing signatures -->
+            </div>
+          </div>
+
+          <form id="sign-petition">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" name="hometown" required>
+            <button type="submit" id="sign-now-button">Sign Now</button>
+          </form>
+          <p>Total signatures: <span id="signature-count">0</span></p>
+        </section>
+
+        <br>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <a href="https://www.un.org/en/observances/zero-tolerance-female-genital-mutilation-day">UN Zero Tolerance to FGM</a>
+        <a href="https://www.unicef.org/protection/female-genital-mutilation">UNICEF on FGM</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/female-genital-mutilation">WHO on FGM</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <p id="modal-message"></p>
+      <img id="modal-img" src="fgm.jpg" width="100px" />
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
